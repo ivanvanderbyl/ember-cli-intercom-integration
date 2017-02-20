@@ -49,6 +49,10 @@ export default Service.extend(Evented, {
     return this._wrapIntercomCallInPromise('hide', 'hide');
   },
 
+  toggleOpen() {
+    this.get('isOpen') ? this.hide() : this.show();
+  },
+
   /**
    * Opens the message window with the message list visible.
    *

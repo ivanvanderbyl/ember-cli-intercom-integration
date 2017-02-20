@@ -1,0 +1,1 @@
+export { default } from 'ember-cli-intercom-integration/components/intercom-button/component';
